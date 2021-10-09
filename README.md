@@ -54,11 +54,27 @@ We will be evaluating
 
 ### Defects
 
- 1. Toppings options should not be displayed to user to select when user select Pizza1 with no toppings options.
- 	Expected: Toppings1 and Toppings2 option should not be displayed
- 	Actual: Toppings1 and Toppings2 option are displayed
-
- 2. Clicking on Reset is not resetting the Toppings value.
- 	Expected: Toppings1 and Toppings2 values should be reset to "Choose a Toppings1" and "Choose a Toppings2"
+  1. Quantity accept characters and there is no warning message displayed while entering characters
+    Expected: Quantity field should accept numbers only and there should be a warning message while entering characters
+    Actual:Able to enter characters, special characters in the Quantity field
+    
+ 2. When we select the pizza with Toppings, according to the selection the toppings option should be displayed, for example if select one topping only one should be displayed,       if we select no toppings there should not be any toppings option displayed
+ 	  Expected: Toppings option must be displayed as per the selected option
+ 	  Actual: When user is selecting "no toppings" and "one topping", still two topping options are displayed
+  
+  3.Phone number field accepting characters and special characters
+    Expected:Phone number field should not accept any characters
+    Actual:Phone number field accepting characters and there is no warning message
+    
+  4. Clicking on Reset is not resetting the Toppings value.
+  	Expected: Toppings1 and Toppings2 values should be reset to "Choose a Toppings1" and "Choose a Toppings2"
  	Actual: Selected Toppings1 and Toppings2 option are retained
+    
+  5. Order placed for the invalid quantity is successfull
+    Expected: There should be a warning message or order should not be successful when an order is placed with invalid quantity
+    Actual:When an order is placed with invalid quantity the order is successful.
  
+ 6. Order is successful without selecting mode of payment
+    Expected: Order must be placed with credit card or Cash on pickup
+    Actual:Order is placed successfully without selecting the options Credit card or Cash on Pickup
+
