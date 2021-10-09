@@ -10,7 +10,15 @@ public class TestBase {
 
     private Configuration config;
     protected WebDriver driver;
-    protected String url;
+    public WebDriver getDriver() {
+		return driver;
+	}
+
+	public void setDriver(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	protected String url;
 
     @BeforeClass(alwaysRun = true)
     public void init() throws Throwable {

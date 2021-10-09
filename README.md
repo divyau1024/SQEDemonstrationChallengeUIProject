@@ -47,5 +47,18 @@ We will be evaluating
 
 #### Test Cases
 
- 1.  
+ 1. Verify successful order of piza by providing all mandatory fields  -- testcase name -- test_verifySuccessFulOrderingOfPizza
+ 2. Verify successful order of pizza by seleting an cash option -- testcase name -- test_verifySuccessFulOrderingOfPizzaUsingCashPickup
+ 3. Verify the user gets an warning message if the mandatory fields are missing -- testcase name -- test_verifyUserWarnedWithMissingMandatoryFields
 
+
+### Defects
+
+ 1. Toppings options should not be displayed to user to select when user select Pizza1 with no toppings options.
+ 	Expected: Toppings1 and Toppings2 option should not be displayed
+ 	Actual: Toppings1 and Toppings2 option are displayed
+
+ 2. Clicking on Reset is not resetting the Toppings value.
+ 	Expected: Toppings1 and Toppings2 values should be reset to "Choose a Toppings1" and "Choose a Toppings2"
+ 	Actual: Selected Toppings1 and Toppings2 option are retained
+ 
